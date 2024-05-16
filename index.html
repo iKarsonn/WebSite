@@ -5,49 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sitesi</title>
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>    <!--***************************************RESPONSİVE Unutma!!!***************************************-->
 
-    <nav>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="#">GÜMÜŞHANE</a>
-                </div>
-                <ul>
-                    <li><a href="#" class="active">Hakkımda</a></li>
-                    <li><a href="#">Öz Geçmiş</a></li>
-                    <li><a href="#">Memleketim</a></li>
-                    <li><a href="#">İletişim</a></li>
-                </ul>
-                
-            </div>
-            <div> <!--Hakkımda Sayfasının İçi Doldurulacak--> <!--Hobiler, İlgilenilen Sporlar, Başarılar vs.-->
-                <div>
-    
-                </div>
-            </div>
-    
-            <div>   <!--Linkler Eklenecek (Diğer sayfalarla bağlantı için)-->
-                <div>
-        
-                </div>
-            </div>
-        
-            <div>   <!---->
-                <div>
-        
-                </div>
-            </div>
-    
-        </div>
-    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Hakkımda</a>
+  <a href="#news">Öz Geçmiş</a>
+  <a href="#contact">Şehrim</a>
+  <a href="#about">İletişim</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 
-    
-    
-    
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</div>
 </body>
 </html>
