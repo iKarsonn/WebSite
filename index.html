@@ -4,43 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sitesi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehakkimda.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-<body>    <!--***************************************RESPONSİVE Unutma!!!***************************************-->
+<body>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="container-fluid">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="hakkimda.html" class="active">Hakkımda</a>
+                <a href="ozgecmis.html">Öz Geçmiş</a>
+                <a href="sehrim.html">Şehrim</a>
+                <a href="takimimiz.html">Takımımız</a>
+                <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
 
-<nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-white mb-4">Ben Kimim?</h1>
+                    <div class="col-lg-5">
+                        <img src="images/selale.jpeg" alt="Masa Tenisi Turnuvası" class="img-fluid custom-img">
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="info-text">Adım: Muhammed Ömer</p>
+                        <p class="info-text">Soyadım: KARSON</p>
+                        <p class="info-text">Yaşım: 20</p>
+                        <p class="info-text">Mesleğim: Geleceğin Bilgisayar Mühendisi</p>
+                        <p class="info-text">Hobilerim: Film, Dizi Seyretme, Masa Tenisi, Futbol, SAGOlamak</p>
+                        <p class="info-text">Eğitim Durumum: Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü 1.Sınıf Öğrencisi</p>
+                        <p class="info-text">Memleketim: Gümüşhane</p>
+                        <p class="info-text">Doğum Yerim: İstanbul / Bağcılar</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="images/TableTennis2.jpeg" alt="Marmara Şampiyonluğu" class="img-fluid custom-img-2">
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="images/sagopa_kajmer.jpg" alt="Sagopa Kajmer" class="img-fluid custom-img-2" width="400" height="300">
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="images/kurtlarvadisi.webp" alt="Kurtlar Vadisi" class="img-fluid custom-img-2" width="400" height="300">
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
 
-  <div class="topnav" id="myTopnav">
-    <a href="hakkimda.html" class="active">Hakkımda</a>
-    <a href="ozgecmis.html">Öz Geçmiş</a>
-    <a href="sehrim.html">Şehrim</a>
-    <a href="mirasimiz.html">Mirasımız</a>
-    <a href="ilgialanlarim.html">İlgi Alanlarım</a>
-  
-    <a href="iletisim.html">İletişim</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  
-  <script>
-      function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
-  }
-  </script>
-  </div>
-
-</nav>
-
-
+</script>
 </body>
 </html>
