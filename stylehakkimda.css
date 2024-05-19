@@ -80,7 +80,7 @@ main {
 /* Image Styles */
 .custom-img {
   width: 300px; /* Resmin genişliği */
-  height: 400px; /* Resmin yüksekliği */
+  height: auto; /* Resmin yüksekliği */
   display: block;
   margin: 0 auto; /* Resmi ortalamak için */
 }

@@ -124,4 +124,7 @@
     margin-bottom: 20px; /* Yazılar arasına boşluk ekler */
     margin-top: 20px;
 }
-  
+.col-lg-7 {
+padding-top: 20px;
+    text-align: left;
+}

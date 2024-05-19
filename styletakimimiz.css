@@ -119,4 +119,60 @@
     margin-top: 20px; /* Üst kenar boşluğu ekler */
     margin-bottom: 20px; /* Alt kenar boşluğu ekler */
   }
-  
+  .container {
+    margin-top: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Specific styles for Ahmet Özen's image */
+.ahmetyavuz-img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    float: left; /* Sola yaslamak için kullanılır */
+    border-radius: 10px;
+}
+.col-lg-8 p{
+
+  color: white;
+  margin-top: 30px;
+}
+.full-width-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* Konteyneri relative konumlandır */
+.position-relative {
+  position: relative;
+}
+
+/* Resmi tam genişlikte ve fluid yap */
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Metin üzerine konumlandırma */
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
