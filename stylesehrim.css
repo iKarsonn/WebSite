@@ -152,11 +152,11 @@ main {
 }
 
 .info-text {
-    font-size: 20px; /* Yazı boyutunu 20px yapar */
+    font-size: 15px; /* Yazı boyutunu 20px yapar */
     color: #ffffff; /* Mevcut stilinizde olan diğer özellikler */
     line-height: 1.6;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .custom-img {

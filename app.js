@@ -23,25 +23,29 @@ maining.src=images[num]
 }
 
 
+const settings = {
+    async: true,
+    crossDomain: true,
+    url: 'https://football98.p.rapidapi.com/competitions',
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '72bea13727mshc282a661d79d21cp15b54djsn441b5a086030',
+        'X-RapidAPI-Host': 'football98.p.rapidapi.com'
+    }
+};
 
-
-// app.js
-
-document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = 'YOUR_API_KEY_HERE';
-    const city = 'Istanbul'; // Şehir ismini burada belirleyebilirsiniz
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const weatherDiv = document.getElementById('weather');
-            const weatherData = `
-                <h2>${data.name}</h2>
-                <p>Temperature: ${data.main.temp}°C</p>
-                <p>Weather: ${data.weather[0].description}</p>
-            `;
-            weatherDiv.innerHTML = weatherData;
-        })
-        .catch(error => console.error('Error fetching data:', error));
+// API'den yarışmaların bilgilerini almak için isteği yap
+$.ajax(settings).done(function (response) {
+    // Cevap alındığında bu kod bloğu çalışacak
+    console.log(response); // Gelen verileri konsola yazdır
+    // Örnek olarak, yarışmaların adlarını ve ülkelerini görüntüleyebiliriz
+    for (let i = 0; i < response.length; i++) {
+        const competition = response[i];
+        console.log('Yarışma Adı:', competition.name);
+        console.log('Ülke:', competition.country);
+        console.log('-------------------------------------');
+    }
+}).fail(function (xhr, status, error) {
+    // İstek başarısız olduğunda bu kod bloğu çalışacak
+    console.error('API İsteği Başarısız Oldu:', error); // Hata mesajını konsola yazdır
 });

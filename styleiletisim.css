@@ -96,7 +96,7 @@
   
   /* Text Styles */
   .info-text {
-    color: white;
+    color: rgb(60, 60, 60);
     margin-bottom: 10px; /* Metinler arasına boşluk eklemek için */
   }
   
@@ -123,7 +123,7 @@
 }
 
 .contact-form {
-    background-color: white;
+    background-color: rgb(120, 120, 120);
     padding: 20px;
     height: 100%;
 }
