@@ -102,5 +102,54 @@
   
   .row{
   
-    background-color: rgba(112, 112, 112, 0.501);
+    background-color: rgb(60, 60, 60);
   }
+
+  .contact-info {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.contact-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contact-form .input-box {
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.button input {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button input:hover {
+    background-color: #0056b3;
+}
